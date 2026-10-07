@@ -1,0 +1,1 @@
+const btn=document.querySelector('.menu-btn');const menu=document.querySelector('.menu');const close=document.querySelector('.menu-close');if(btn&&menu){btn.addEventListener('click',()=>menu.classList.add('open'));close.addEventListener('click',()=>menu.classList.remove('open'));menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')))}
